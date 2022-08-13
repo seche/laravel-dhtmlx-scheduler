@@ -1,0 +1,32 @@
+{
+    "name": "seche/laravel-dhtmlx-calendar",
+    "description": "Laravel helper for DHTMLX Scheduler",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Mathieu Leblond",
+            "email": "mathieu.leblond@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/support": "~7.0|~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seche\\LaravelDhtmlxScheduler\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seche\\LaravelDhtmlxScheduler\\ServiceProvider"
+            ],
+            "aliases": {
+                "Scheduler": "Seche\\LaravelDhtmlxScheduler\\Facades\\Scheduler"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
